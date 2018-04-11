@@ -6,19 +6,6 @@
 
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-	  
-    // javascript & jquery code
-	  
-    $(function () {
-	    
-	    console.log("JQuery is loaded");
-	    
-    });
-	  
-  });
-</script>
 
 </head>
 <body>
@@ -33,6 +20,28 @@
 	<option value="6">February 27th</option>
 	<option value="6">February 28th</option>
 </select>
+	
+$ (function() {
+
+	$(function () {
+			
+				var url = 'https://aprilproject.herokuapp.com/';
+				$.ajax({
+					datatype: "json",
+					url: url,
+					
+					success: function (result) {
+					
+						var jsondata = result.slice(1,5);
+						console.log(jsondata);
+						
+					
+					}
+				
+				});//end of ajax
+			}); //end of function
+
+});
 
 </body>
 </html>
