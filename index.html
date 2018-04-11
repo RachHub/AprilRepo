@@ -11,7 +11,7 @@
 <body>
 
 <select id="chooseDate">
-	<option value="0">Choose a date to find out<br>what happened on that day</option>
+	<option value="0">Choose a date to find out what happened on that day</option>
 	<option value="1">February 14th</option>
 	<option value="2">February 19th</option>
 	<option value="3">February 23rd</option>
@@ -44,7 +44,7 @@ $ (function() {
 						(function($){ //start of wrapper to avoid type error
 							$('#chooseDate'.on('change', function () {
 								console.log("You have selected a date");
-							});
+							}));
 						})(jQuery); //end of wrapper to avoid type error
 							
 					}
