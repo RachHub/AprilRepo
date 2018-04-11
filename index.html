@@ -22,26 +22,10 @@
 </select>
 <script>
 
-$ (function() {
-
-	$(function () {
-			
-				var url = 'https://aprilproject.herokuapp.com/';
-				$.ajax({
-					datatype: "json",
-					url: url,
-					
-					success: function (result) {
-					
-						var jsondata = result.slice(1,5);
-						console.log(jsondata);
-						
-					
-					}
-				
-				});//end of ajax
-			}); //end of function
-
+$(function() {
+	
+	console.log("JQuery is loaded");
+	
 });
 
 </script>
