@@ -22,13 +22,14 @@
 </select>
 <script>	
 $ (function() {
+	
+	console.log("JQuery is loaded");
 
 	$(function () {
 			
-				var url = 'https://aprilproject.herokuapp.com/';
-				$.ajax({
-					datatype: "json",
-					url: url,
+			$.ajax({dataType: "json", url: data.json,
+				
+			//WSSchools example ajax request: $.ajax({url: "demo_ajax_script.js", dataType: "script"});
 					
 					success: function (result) {
 					
@@ -38,10 +39,9 @@ $ (function() {
 					
 					}
 				
-				});//end of ajax
+				});//end of ajax		
 			}); //end of function
-
-});
+}); //end of JQuery load	
 </script>
 </body>
 </html>
