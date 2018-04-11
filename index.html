@@ -32,9 +32,10 @@ $ (function() {
 			//WSSchools example ajax request: $.ajax({url: "demo_ajax_script.js", dataType: "script"});
 					
 					success: function (data) {
-					
 						
-						console.log(data);
+						var chunkofdata = $('data.slice(1,5)');
+						
+						console.log(chunkofdata);
 						
 					
 					}
