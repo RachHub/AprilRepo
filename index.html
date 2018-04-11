@@ -41,10 +41,11 @@ $ (function() {
 							console.log(jsondata.events[currentEvent]);
 							currentEvent++;
 						}
-						
-						$('#chooseDate'.change(function () {
-							console.log("You have selected a date");
-						}));
+						(function($){ //start of wrapper to avoid type error
+							$('#chooseDate'.on('change', function () {
+								console.log("You have selected a date");
+							});
+						})(jQuery); //end of wrapper to avoid type error
 							
 					}
 				
