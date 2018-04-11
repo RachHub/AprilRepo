@@ -27,13 +27,13 @@ $ (function() {
 
 	$(function () {
 			
-			$.ajax({dataType: "json", url: "data.json",
+			$.ajax({dataType: 'json', url: 'data.json',
 				
 			//WSSchools example ajax request: $.ajax({url: "demo_ajax_script.js", dataType: "script"});
 					
-					success: function (result) {
+					success: function (data) {
 					
-						var jsondata = result.slice(1,5);
+						var jsondata = data.slice(1,5);
 						console.log(jsondata);
 						
 					
