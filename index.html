@@ -11,7 +11,7 @@
 <body>
 
 <select id="chooseDate">
-	<option value="0">Choose an option</option>
+	<option value="0">Choose a date to find out<br>what happened on that day</option>
 	<option value="1">February 14th</option>
 	<option value="2">February 19th</option>
 	<option value="3">February 23rd</option>
@@ -35,13 +35,15 @@ $ (function() {
 						
 						
 						var jsondata = data
-						console.log(jsondata, "Something is happening");
 						
-						console.log(jsondata.events);
-						var currentEvent = 0;
-						for (i=0; i <= jsondata.events.length; i++){
+						var currentEvent = 0;						
+						for (i=0; i <= jsondata.events.length; i++) {
 							console.log(jsondata.events[currentEvent]);
 							currentEvent++;
+						}
+						
+						$('chooseDate'.on('change'), function () {
+							console.log("You have selected a date");
 						}
 							
 					}
