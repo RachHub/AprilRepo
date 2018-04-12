@@ -36,11 +36,15 @@ $ (function() {
 						
 						var jsondata = data
 						
-						var currentEvent = 0;						
+						var currentEvent = 0;
+						var arrayOfEvents = [];
 						for (i=0; i <= jsondata.events.length; i++) {
-							console.log(jsondata.events[currentEvent]);
+							arrayOfEvents.push(jsondata.events[currentEvent]);
 							currentEvent++;
 						}
+						
+						console.log(arrayOfEvents);
+						
 						(function($){ //start of wrapper to avoid type error
 							$('#chooseDate').on('change', function () {
 								console.log("You have selected a date");
