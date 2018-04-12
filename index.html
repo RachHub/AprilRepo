@@ -45,14 +45,14 @@ $ (function() {
 						
 						console.log(arrayOfEvents[1]);
 						
-						(function($){ //start of wrapper to avoid type error
+					//	(function($){ //start of wrapper to avoid type error
 							$('#chooseDate').on('change', function () {
 								
 								var chosenDate = $("#chooseDay :selected").text();
 								console.log("You have selected the following date: %s", chosenDate);
 								
 							});
-						})(jQuery); //end of wrapper to avoid type error
+					//	})(jQuery); //end of wrapper to avoid type error
 							
 					}
 				
