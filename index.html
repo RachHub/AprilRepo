@@ -47,10 +47,9 @@ $ (function() {
 						
 						(function($){ //start of wrapper to avoid type error
 							$('#chooseDate').on('change', function () {
-								var mySelectBox = $(this);
-								console.log(mySelectBox);
-								var stringDateSelected = (mySelectBox.selectedIndex).text;
-								console.log("You have selected the following date: " + stringDateSelected);
+								
+								var chosenDate = $("#chooseDay :selected").text();
+								console.log("You have selected the following date: " + chosenDate);
 								
 							});
 						})(jQuery); //end of wrapper to avoid type error
