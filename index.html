@@ -49,7 +49,7 @@ $ (function() {
 							$('#chooseDate').on('change', function () {
 								
 								var chosenDate = $("#chooseDay :selected").text();
-								console.log("You have selected the following date: " + chosenDate);
+								console.log("You have selected the following date: %s", chosenDate);
 								
 							});
 						})(jQuery); //end of wrapper to avoid type error
