@@ -47,7 +47,7 @@ $ (function() {
 						
 						(function($){ //start of wrapper to avoid type error
 							$('#chooseDate').on('change', function () {
-								var mySelectBox = document.getElementById('#chooseDate');
+								var mySelectBox = document.getElementById($(this));
 								var stringDateSelected = mySelectBox.selectedIndex.text;
 								console.log("You have selected the following date: " + stringDateSelected);
 								
