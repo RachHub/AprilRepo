@@ -52,7 +52,7 @@ $ (function() {
 							$('#chooseDate').on('change', function () {
 								
 								var chosenDate = $("#chooseDate option:selected").text();
-								for (i=0; i<=arrayOfEvents.length; i++) {
+								for (i=0; i<arrayOfEvents.length; i++) {
 									
 									var arrayString = arrayOfEvents[i].toString();
 									console.log(arrayString);
