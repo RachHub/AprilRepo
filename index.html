@@ -52,9 +52,9 @@ $ (function() {
 							$('#chooseDate').on('change', function () {
 								
 								var chosenDate = $("#chooseDate option:selected").text();
-								for (i=0; i<arrayOfEvents.length; i++) {
+								for (i=0; i<=arrayOfEvents.length; i++) {
 									
-									var arrayString = arrayOfEvents[i].toString();
+									var arrayString = Object.values(arrayOfEvents[i]);
 									console.log(arrayString);
 									if (arrayString === chosenDate) {
 										document.getElementById("#boxForText").innerHTML = arrayOfEvents[i];
