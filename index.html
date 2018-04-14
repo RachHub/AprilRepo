@@ -20,6 +20,9 @@
 	<option value="6">February 27th</option>
 	<option value="6">February 28th</option>
 </select>
+
+<div id="boxForText"></div>
+	
 <script>	
 $ (function() {
 	
@@ -49,6 +52,11 @@ $ (function() {
 							$('#chooseDate').on('change', function () {
 								
 								var chosenDate = $("#chooseDate option:selected").text();
+								for (i=0; i<=arrayOfEvents.length; i++) {
+									if arrayOfEvents[i] === chosenDate {
+										document.getElementById("#boxForText").innerHTML = arrayOfEvents[i];
+									}
+								}
 								console.log("You have selected the following date: %s", chosenDate);
 								
 							});
