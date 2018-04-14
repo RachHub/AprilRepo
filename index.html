@@ -53,7 +53,9 @@ $ (function() {
 								
 								var chosenDate = $("#chooseDate option:selected").text();
 								for (i=0; i<=arrayOfEvents.length; i++) {
-									if (arrayOfEvents[i] === chosenDate) {
+									
+									var arrayString = arrayOfEvents[i].toString();
+									if (arrayString === chosenDate) {
 										document.getElementById("#boxForText").innerHTML = arrayOfEvents[i];
 									}
 								}
