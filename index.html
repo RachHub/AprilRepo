@@ -62,14 +62,15 @@ $ (function() {
 								var chosenDate = $("#chooseDate option:selected").text();
 								for (i=0; i<=6; i++) {
 									
-									var arrayString = Object.values(arrayOfEvents[i]);
+									var arrayValues = Object.values(arrayOfEvents[i]);
 									console.log(Object.values(arrayOfEvents[i])); 
+									var arrayKeys = (Object.keys(arrayOfEvents[i])[0];
 									
-									if (arrayString == chosenDate) {
+									if (arraykeys == chosenDate) {
 										document.getElementById('#boxForText').innerHTML = arrayOfEvents[i];
 									}
 								}
-								console.log((Object.keys(arrayOfEvents[0]))[0]); //expecting to see February 14th printed to the console
+								console.log((Object.keys(arrayOfEvents[0]))[0]); //this is printing a straightforward string to the console
 								console.log(chosenDate); //this is printing a straightforward string to the console
 								console.log("You have selected the following date: %s", chosenDate);
 								
