@@ -10,8 +10,8 @@
 <style>
 	div {
 		border: solid 1px red;
-		width: 50px;
-		height: 50px;
+		width: 400px;
+		height: 400px;
 	}
 </style>
 	
@@ -63,9 +63,10 @@ $ (function() {
 								for (i=0; i<=6; i++) {
 									
 									var arrayString = Object.values(arrayOfEvents[i]);
-									console.log(arrayString);
+									console.log(Object.values(arrayOfEvents[i]));
+									console.log(arrayString);  // this isn't printing anything to the console
 									if (arrayString == chosenDate) {
-										document.getElementById("#boxForText").innerHTML = arrayOfEvents[i];
+										document.getElementById('#boxForText').innerHTML = arrayOfEvents[i];
 									}
 								}
 								console.log("You have selected the following date: %s", chosenDate);
