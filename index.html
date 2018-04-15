@@ -61,10 +61,10 @@ $ (function() {
 								
 								var chosenDate = $("#chooseDate option:selected").text();
 								for (i=0; i<=6; i++) {
-									console.log(arrayOfEvents[i]);
+									
 									var arrayString = Object.values(arrayOfEvents[i]);
-									console.log(Object.values(arrayOfEvents[i])); // this isn'tprinting anything to the console
-									console.log(arrayString);  // this isn't printing anything to the console
+									console.log(Object.values(arrayOfEvents[i])); 
+									
 									if (arrayString == chosenDate) {
 										document.getElementById('#boxForText').innerHTML = arrayOfEvents[i];
 									}
