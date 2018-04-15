@@ -67,7 +67,7 @@ $ (function() {
 									var arrayKeys = (Object.keys(arrayOfEvents[i]))[0];
 									
 									if (arrayKeys == chosenDate) {
-										document.getElementById('#boxForText').innerHTML = arrayOfEvents[i];
+										(document.getElementById('#boxForText')).innerHTML = arrayOfEvents[i];
 									}
 								}
 								console.log((Object.keys(arrayOfEvents[0]))[0]); //this is printing a straightforward string to the console
